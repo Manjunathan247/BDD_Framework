@@ -16,7 +16,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 7,
-      "name": "@AmazonLogin"
+      "name": "@Amazon"
     }
   ]
 });
@@ -55,35 +55,39 @@ formatter.match({
   "location": "AmazonLogin.user_in_something_page(String)"
 });
 formatter.result({
-  "duration": 158115700,
+  "duration": 19629940600,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonLogin.user_click_on_sign_in_button_it_shoud_display_amazon_signin_page()"
 });
 formatter.result({
-  "duration": 22600,
+  "duration": 27700,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonLogin.user_enter_mail_id_then_click_on_continue_button()"
 });
 formatter.result({
-  "duration": 23700,
+  "duration": 29600,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonLogin.user_enter_password_then_click_on_login_button()"
 });
 formatter.result({
-  "duration": 73700,
+  "duration": 21700,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonLogin.user_should_be_in_home_page()"
 });
 formatter.result({
-  "duration": 23500,
+  "duration": 18100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 661036400,
   "status": "passed"
 });
 });

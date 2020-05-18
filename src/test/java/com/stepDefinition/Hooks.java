@@ -1,28 +1,22 @@
 package com.stepDefinition;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
+import com.testBase.Base;
+import com.testBase.Configuration;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Hooks {
-	
-	private static WebDriver driver;
+public class Hooks extends Base {
 	
 	@Before("@Amazon")
-	public void setup()
-	{
-		WebDriverManager.chromedriver().setup();
-		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
-		driver = new ChromeDriver();
+	public void launchBrowser() throws Throwable {
+		loadConfigurationFile();
+		config = new Configuration(prop);
+		initilizeDriver(config.browserName());
 	}
-	
+
 	@After("@Amazon")
-	public void tearDown()
-	{
+	public void tearDown() {
 		driver.close();
 	}
 }

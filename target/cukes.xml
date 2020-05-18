@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.158259">
-<testcase classname="Validating Login functionality for Amazon site" name="User can able to login with valide credentials" time="0.158259">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.291074">
+<testcase classname="Validating Login functionality for Amazon site" name="User can able to login with valide credentials" time="20.291074">
 <system-out><![CDATA[Given user in "https://www.amazon.in/" page.................................passed
 When user click on sign in button it shoud display Amazon signin page.......passed
 And user enter mail id then click on continue button........................passed
